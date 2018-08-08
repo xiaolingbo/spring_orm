@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Package>
+    <EnvelopInfo>
+        <version>1.0</version>
+        <message_type>BGD</message_type>
+    </EnvelopInfo>
+    <DataInfo>
+        <ExchangeData>
+            <InvtMessage>
+                <InvtHeadType>
+                    <SeqNo>SeqNo11</SeqNo>
+                    <BondInvtNo>BondInvtNo22</BondInvtNo>
+                </InvtHeadType>
+                <InvtListType>
+                    <GdsSeqno>111</GdsSeqno>
+                    <PutrecSeqno>111</PutrecSeqno>
+                </InvtListType>
+                <InvtListType>
+                    <GdsSeqno>222</GdsSeqno>
+                    <PutrecSeqno>222</PutrecSeqno>
+                </InvtListType>
+            </InvtMessage>
+            <DecContainers>
+                <Container>
+                    <ContainerId>11111</ContainerId>
+                    <ContainerMd>1111</ContainerMd>
+                </Container>
+                <Container>
+                    <ContainerId>222</ContainerId>
+                    <ContainerMd>222</ContainerMd>
+                </Container>
+            </DecContainers>
+            <DecLicenseDocus>
+                <LicenseDocu>
+                    <DocuCode>22222</DocuCode>
+                    <CertCode/>
+                </LicenseDocu>
+            </DecLicenseDocus>
+        </ExchangeData>
+    </DataInfo>
+</Package>

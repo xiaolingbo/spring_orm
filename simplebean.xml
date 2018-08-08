@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<simplebean>
+        <book>
+            <user>
+                <name>张三</name>
+                <age>35</age>
+            </user>
+            <jobDescription>Janitor</jobDescription>
+        </book>
+</simplebean>
