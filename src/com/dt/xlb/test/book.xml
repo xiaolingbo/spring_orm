@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<book>
+ <author>
+  <name first="张" last="三丰" />
+ </author>
+
+ <author>
+  <name first="李" last="四钱" />
+ </author>
+
+ <bookInfo>
+  <isbn>123456789</isbn>
+  <title>JAVA虚拟机讲解</title>
+ </bookInfo>
+</book>

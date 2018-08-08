@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+    <bean id="oxmExample" class="com.dt.xlb.test3.Main">
+        <property name="marshaller" ref="castorMarshaller" />
+        <property name="unmarshaller" ref="castorMarshaller" />
+    </bean>
+    <bean id="castorMarshaller" class="org.springframework.oxm.castor.CastorMarshaller">
+        <property name="mappingLocation" value="classpath:sampleMapping.xml" />
+    </bean>
+
+    <import resource="classpath:cxf.xml"/>
+    <jaxws:endpoint id="sendServie" implementor="com.hwt.pdmp.testWeb.SendServiceImpl" address="/sendServie" />
+</beans>

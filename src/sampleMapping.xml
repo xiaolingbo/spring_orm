@@ -1,0 +1,94 @@
+<?xml version="1.0"?>
+<!DOCTYPE mapping PUBLIC "-//EXOLAB/Castor Mapping DTD Version 1.0//EN" "http://castor.org/mapping.dtd">
+
+<mapping>
+    <class name="com.dt.xlb.test3.Package">
+        <map-to xml="Package"/>
+        <field name="EnvelopInfo" type="com.dt.xlb.test3.EnvelopInfo">
+            <bind-xml name="EnvelopInfo" node="element"/>
+        </field>
+        <field name="DataInfo" type="com.dt.xlb.test3.DataInfo">
+            <bind-xml name="DataInfo" node="element"/>
+        </field>
+    </class>
+    <class name="com.dt.xlb.test3.EnvelopInfo">
+        <field name="version" type="string">
+            <bind-xml name="version" node="element"/>
+        </field>
+        <field name="message_type" type="string">
+            <bind-xml name="message_type" node="element"/>
+        </field>
+    </class>
+    <class name="com.dt.xlb.test3.DataInfo">
+        <field name="ExchangeData" type="com.dt.xlb.test3.ExchangeData">
+            <bind-xml name="ExchangeData" node="element"/>
+        </field>
+    </class>
+    <class name="com.dt.xlb.test3.ExchangeData">
+        <field name="InvtMessage" type="com.dt.xlb.test3.InvtMessage">
+            <bind-xml name="InvtMessage" node="element"/>
+        </field>
+        <field name="DecContainers" type="com.dt.xlb.test3.DecContainers">
+            <bind-xml name="DecContainers" node="element"/>
+        </field>
+        <field name="DecLicenseDocus" type="com.dt.xlb.test3.DecLicenseDocus">
+            <bind-xml name="DecLicenseDocus" node="element"/>
+        </field>
+    </class>
+    <!--InvtMessage-->
+    <class  name="com.dt.xlb.test3.InvtMessage">
+        <field name="InvtHeadType" type="com.dt.xlb.test3.InvtHeadType">
+            <bind-xml name="InvtHeadType" node="element"/>
+        </field>
+        <field name="InvtListTypeList" type="com.dt.xlb.test3.InvtListType" collection="vector">
+            <bind-xml name="InvtListType" node="element"/>
+        </field>
+    </class>
+    <class  name="com.dt.xlb.test3.InvtHeadType">
+        <field name="SeqNo" type="string">
+            <bind-xml name="SeqNo" node="element"/>
+        </field>
+        <field name="BondInvtNo" type="string">
+            <bind-xml name="BondInvtNo" node="element"/>
+        </field>
+    </class>
+    <class name="com.dt.xlb.test3.InvtListType">
+        <field name="GdsSeqno" type="string">
+            <bind-xml name="GdsSeqno" node="element"/>
+        </field>
+        <field name="PutrecSeqno" type="string">
+            <bind-xml name="PutrecSeqno" node="element"/>
+        </field>
+    </class>
+
+    <!--DecContainers-->
+    <class  name="com.dt.xlb.test3.DecContainers">
+        <field name="containerList" type="com.dt.xlb.test3.Container" collection="vector">
+            <bind-xml name="Container" node="element"/>
+        </field>
+    </class>
+    <class  name="com.dt.xlb.test3.Container">
+        <field name="ContainerId" type="string">
+            <bind-xml name="ContainerId" node="element"/>
+        </field>
+        <field name="ContainerMd" type="string">
+            <bind-xml name="ContainerMd" node="element"/>
+        </field>
+    </class>
+
+    <!--DecLicenseDocus-->
+    <class  name="com.dt.xlb.test3.DecLicenseDocus">
+        <field name="licenseDocuList" type="com.dt.xlb.test3.LicenseDocu" collection="vector">
+            <bind-xml name="LicenseDocu" node="element"/>
+        </field>
+    </class>
+    <class  name="com.dt.xlb.test3.LicenseDocu">
+        <field name="DocuCode" type="string">
+            <bind-xml name="DocuCode" node="element"/>
+        </field>
+        <field name="CertCode" type="string">
+            <bind-xml name="CertCode" node="element"/>
+        </field>
+    </class>
+
+</mapping>
